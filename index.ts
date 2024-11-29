@@ -1,4 +1,4 @@
-import { orderController } from './modules/Order';
+import { orderApiController } from './modules/Order';
 
 const server = Bun.serve({
   port: 3000,
@@ -7,16 +7,16 @@ const server = Bun.serve({
 
     switch (url.pathname) {
       case '/order/list':
-        return orderController.list(req)
+        return orderApiController.list(req)
 
       case '/order/create':
-        return orderController.create(req)
+        return orderApiController.create(req)
 
       case '/order/push-item':
-        return orderController.pushItem(req)
+        return orderApiController.pushItem(req)
 
       case '/order/pay':
-        return orderController.pay(req)
+        return orderApiController.pay(req)
 
       default:
         return Response.json({ error: 404 }, { status: 404 })

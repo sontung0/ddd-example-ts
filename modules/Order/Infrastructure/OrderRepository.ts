@@ -1,5 +1,5 @@
-import type { OrderAggregateInterface, OrderAggregateCommand, OrderProperties, OrderRepositoryInterface } from "./contracts";
-import { OrderAggregate } from "./OrderAggregate";
+import type { OrderAggregateInterface, OrderAggregateCommand, OrderProperties, OrderRepositoryInterface } from "../contracts";
+import { OrderAggregate } from "../Domain/OrderAggregate";
 
 export class OrderRepository implements OrderRepositoryInterface {
   constructor(

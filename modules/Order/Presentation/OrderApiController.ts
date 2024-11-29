@@ -1,6 +1,6 @@
-import type { OrderRepositoryInterface, OrderServiceInterface } from "./contracts"
+import type { OrderRepositoryInterface, OrderServiceInterface } from "../contracts"
 
-export class OrderController {
+export class OrderApiController {
   constructor(
     protected service: OrderServiceInterface,
     protected repo: OrderRepositoryInterface

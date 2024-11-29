@@ -1,6 +1,6 @@
-import type { BusInterface } from "../App/contracts";
-import type { OrderAggregateInterface, OrderItem, OrderProperties, OrderRepositoryInterface, OrderServiceInterface } from "./contracts";
-import { OrderAggregate } from "./OrderAggregate";
+import type { BusInterface } from "../../App/contracts";
+import type { OrderAggregateInterface, OrderItem, OrderProperties, OrderRepositoryInterface, OrderServiceInterface } from "../contracts";
+import { OrderAggregate } from "../Domain/OrderAggregate";
 
 export class OrderService implements OrderServiceInterface {
   constructor( 
