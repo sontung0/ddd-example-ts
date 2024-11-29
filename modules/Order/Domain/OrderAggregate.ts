@@ -1,4 +1,5 @@
-import type { OrderAggregateCommand, OrderAggregateInterface, OrderItem, OrderProperties } from "./contracts";
+import type { OrderAggregateCommand, OrderAggregateInterface, OrderItem, OrderProperties } from "../contracts";
+
 export class OrderAggregate implements OrderAggregateInterface {
   constructor(
     readonly id: number,
