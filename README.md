@@ -1,5 +1,7 @@
 # ddd-example
 
+![DDD diagram](ddd-diagram.png?raw=true)
+
 To install dependencies:
 
 ```bash
