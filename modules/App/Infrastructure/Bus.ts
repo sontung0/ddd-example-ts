@@ -1,5 +1,5 @@
 import EventEmitter from 'node:events';
-import type { Event, BusInterface } from './contracts';
+import type { Event, BusInterface } from '../contracts';
 
 export class Bus implements BusInterface {
   constructor(readonly emitter: EventEmitter) {}
